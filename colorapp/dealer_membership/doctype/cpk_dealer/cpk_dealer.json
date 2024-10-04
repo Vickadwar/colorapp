@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:dealer_code",
+ "creation": "2024-08-30 11:24:09.724700",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dealer_details_tab",
+  "cpk_dealer_details_section",
+  "dealer_code",
+  "dealer_name",
+  "town",
+  "depot",
+  "county",
+  "column_break_vmyy",
+  "cpk_region",
+  "sales_representative",
+  "activities_tab",
+  "last_training_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "dealer_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Dealer Details"
+  },
+  {
+   "fieldname": "cpk_dealer_details_section",
+   "fieldtype": "Section Break",
+   "label": "CPK Dealer Details"
+  },
+  {
+   "fieldname": "dealer_code",
+   "fieldtype": "Data",
+   "label": "Dealer Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "dealer_name",
+   "fieldtype": "Data",
+   "label": "Dealer Name"
+  },
+  {
+   "fieldname": "town",
+   "fieldtype": "Link",
+   "label": "Town",
+   "options": "Kenya Town"
+  },
+  {
+   "fieldname": "depot",
+   "fieldtype": "Link",
+   "label": "Depot",
+   "options": "CPK Depot"
+  },
+  {
+   "fieldname": "county",
+   "fieldtype": "Link",
+   "label": "County",
+   "options": "Kenya County"
+  },
+  {
+   "fieldname": "column_break_vmyy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_representative",
+   "fieldtype": "Link",
+   "label": "Sales Representative",
+   "options": "User"
+  },
+  {
+   "fieldname": "activities_tab",
+   "fieldtype": "Tab Break",
+   "label": "Activities"
+  },
+  {
+   "fieldname": "last_training_date",
+   "fieldtype": "Date",
+   "label": "Last Training Date"
+  },
+  {
+   "fieldname": "cpk_region",
+   "fieldtype": "Link",
+   "label": "CPK Region",
+   "options": "CPK Region"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-30 11:33:18.874699",
+ "modified_by": "Administrator",
+ "module": "Dealer Membership",
+ "name": "CPK Dealer",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "dealer_name"
+}

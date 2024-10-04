@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:FOCRQ{YY}{####}",
+ "creation": "2024-09-10 16:16:33.963520",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rr72",
+  "amended_from",
+  "foc_requisition_date",
+  "foc_purpose",
+  "customer_name",
+  "town",
+  "mobile_number",
+  "location",
+  "requisitioned_by",
+  "column_break_lzds",
+  "phone_number",
+  "requester_email",
+  "delivery_instructions",
+  "remarks",
+  "foc_item_list_details_section",
+  "foc_item_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rr72",
+   "fieldtype": "Section Break",
+   "label": "FOC Requisition Form Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "FOC Requisition Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "foc_requisition_date",
+   "fieldtype": "Date",
+   "label": "FOC Requisition Date"
+  },
+  {
+   "fetch_from": "requester_email.depot",
+   "fetch_if_empty": 1,
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "CPK Depot"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "CPK Dealer"
+  },
+  {
+   "fieldname": "town",
+   "fieldtype": "Link",
+   "label": "Town",
+   "options": "Kenya Town"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "default": "User",
+   "fetch_from": "requester_email.full_name",
+   "fieldname": "requisitioned_by",
+   "fieldtype": "Data",
+   "label": "Requisitioned By"
+  },
+  {
+   "fieldname": "column_break_lzds",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "requester_email.mobile_no",
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "default": "User",
+   "fieldname": "requester_email",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Requester Email",
+   "options": "User"
+  },
+  {
+   "description": "Please provide the delivery instructions*",
+   "fieldname": "delivery_instructions",
+   "fieldtype": "Small Text",
+   "label": "Delivery Instructions ",
+   "max_height": "75px"
+  },
+  {
+   "description": "Please provide more information about the FOC*",
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "max_height": "75px"
+  },
+  {
+   "fieldname": "foc_purpose",
+   "fieldtype": "Link",
+   "label": "FOC Purpose",
+   "options": "FOC Purpose"
+  },
+  {
+   "fieldname": "foc_item_list_details_section",
+   "fieldtype": "Section Break",
+   "label": "FOC Item List Details"
+  },
+  {
+   "fieldname": "foc_item_list",
+   "fieldtype": "Table",
+   "label": "FOC Item List",
+   "options": "FOC Item Detail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-10 16:43:40.210877",
+ "modified_by": "Administrator",
+ "module": "FOC",
+ "name": "FOC Requisition Form",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

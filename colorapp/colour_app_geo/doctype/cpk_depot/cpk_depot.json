@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:depot_code",
+ "creation": "2024-08-30 10:08:12.572968",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "cpk_dept_details_section",
+  "depot_name",
+  "town",
+  "depot_code",
+  "depot_administrator"
+ ],
+ "fields": [
+  {
+   "fieldname": "cpk_dept_details_section",
+   "fieldtype": "Section Break",
+   "label": "CPK Dept Details"
+  },
+  {
+   "fieldname": "depot_name",
+   "fieldtype": "Data",
+   "label": "Depot Name"
+  },
+  {
+   "fieldname": "town",
+   "fieldtype": "Link",
+   "label": "Town",
+   "options": "Kenya Town"
+  },
+  {
+   "fieldname": "depot_code",
+   "fieldtype": "Data",
+   "label": "Depot Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "depot_administrator",
+   "fieldtype": "Link",
+   "label": "Depot Administrator",
+   "options": "User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-30 11:10:43.012485",
+ "modified_by": "Administrator",
+ "module": "Colour App Geo",
+ "name": "CPK Depot",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "depot_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "depot_name",
+ "translated_doctype": 1
+}

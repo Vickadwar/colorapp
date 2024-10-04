@@ -1,0 +1,237 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:member_app_number",
+ "creation": "2024-08-23 09:15:42.241148",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_details_tab",
+  "colour_academy_member_details_section",
+  "column_break_kfvd",
+  "first_name",
+  "second_name",
+  "last_name",
+  "member_name",
+  "mobile_number",
+  "gender",
+  "county",
+  "cpk_region",
+  "column_break_syum",
+  "town",
+  "depot",
+  "id_number",
+  "tk_membership_number",
+  "member_app_number",
+  "date_of_birth",
+  "other_information_section",
+  "membership_type",
+  "primary_dealer",
+  "last_training_date",
+  "column_break_vamg",
+  "physical_address",
+  "training_tab",
+  "products_training_training_summary_section",
+  "products_trained_on",
+  "skills_training_summary_section",
+  "skills_trained_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "colour_academy_member_details_section",
+   "fieldtype": "Section Break",
+   "label": "Colour Academy Member Details"
+  },
+  {
+   "fieldname": "column_break_kfvd",
+   "fieldtype": "Column Break",
+   "search_index": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "second_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Second Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Member Name",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fetch_from": "town.county",
+   "fieldname": "county",
+   "fieldtype": "Link",
+   "label": "County",
+   "options": "Kenya County"
+  },
+  {
+   "fieldname": "column_break_syum",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "town",
+   "fieldtype": "Link",
+   "label": "Town",
+   "options": "Kenya Town"
+  },
+  {
+   "fetch_from": "town.depot",
+   "fieldname": "depot",
+   "fieldtype": "Link",
+   "label": "Depot",
+   "options": "CPK Depot"
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "ID Number"
+  },
+  {
+   "fieldname": "tk_membership_number",
+   "fieldtype": "Data",
+   "label": "TK Membership Number"
+  },
+  {
+   "fieldname": "primary_dealer",
+   "fieldtype": "Link",
+   "label": "Primary Dealer",
+   "options": "CPK Dealer"
+  },
+  {
+   "fieldname": "member_app_number",
+   "fieldtype": "Data",
+   "label": "Member App Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "other_information_section",
+   "fieldtype": "Section Break",
+   "label": "Other Information"
+  },
+  {
+   "default": "Painter",
+   "fieldname": "membership_type",
+   "fieldtype": "Select",
+   "label": "Membership Type",
+   "options": "Painter\nNon-Painter\nCarpenter\nContractor\nDesigner"
+  },
+  {
+   "fieldname": "last_training_date",
+   "fieldtype": "Date",
+   "label": "Last Training Date"
+  },
+  {
+   "fieldname": "column_break_vamg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Small Text",
+   "label": "Physical Address",
+   "max_height": "65px"
+  },
+  {
+   "fieldname": "personal_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "training_tab",
+   "fieldtype": "Tab Break",
+   "label": "Training"
+  },
+  {
+   "fieldname": "products_training_training_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Products Training Summary"
+  },
+  {
+   "fieldname": "products_trained_on",
+   "fieldtype": "Table",
+   "label": "Products Trained On",
+   "options": "Training Products Detail"
+  },
+  {
+   "fieldname": "skills_training_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Skills Training Summary"
+  },
+  {
+   "fieldname": "skills_trained_on",
+   "fieldtype": "Table",
+   "label": "Skills Trained On",
+   "options": "Training Skills Detail"
+  },
+  {
+   "fetch_from": "town.cpk_region",
+   "fieldname": "cpk_region",
+   "fieldtype": "Link",
+   "label": "CPK Region",
+   "options": "CPK Region"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-30 11:34:57.869183",
+ "modified_by": "Administrator",
+ "module": "Colour App Membership",
+ "name": "Colour App Member",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "mobile_number",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "member_name"
+}

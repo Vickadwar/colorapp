@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:town_code",
+ "creation": "2024-08-30 09:53:58.272922",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "kenya_town_details_section",
+  "town_name",
+  "county",
+  "town_code",
+  "depot",
+  "cpk_region"
+ ],
+ "fields": [
+  {
+   "fieldname": "kenya_town_details_section",
+   "fieldtype": "Section Break",
+   "label": "Kenya Town Details"
+  },
+  {
+   "fieldname": "town_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Town Name",
+   "search_index": 1
+  },
+  {
+   "fieldname": "county",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "County",
+   "options": "Kenya County"
+  },
+  {
+   "fieldname": "town_code",
+   "fieldtype": "Data",
+   "label": "Town Code",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "depot",
+   "fieldtype": "Link",
+   "label": "Depot",
+   "options": "CPK Depot"
+  },
+  {
+   "fieldname": "cpk_region",
+   "fieldtype": "Link",
+   "label": "CPK Region",
+   "options": "CPK Region"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-30 11:07:28.058247",
+ "modified_by": "Administrator",
+ "module": "Colour App Geo",
+ "name": "Kenya Town",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "town_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "town_name"
+}

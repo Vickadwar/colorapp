@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:counter_staff_meet_id",
+ "creation": "2024-09-06 11:34:25.399618",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "counter_staff_meet_details_tab",
+  "section_break_qc17",
+  "amended_from",
+  "counter_staff_meet_id",
+  "counter_staff_meet_name",
+  "meet_date",
+  "meet_venue",
+  "town",
+  "meet_type",
+  "column_break_bwwn",
+  "meet_facilitator",
+  "sales_representative",
+  "counter_staff_meet_remarks",
+  "section_break_elvs",
+  "dealers",
+  "counter_staff_attendance_details_section",
+  "attendance_list",
+  "products_training_details_section",
+  "products",
+  "skills_training_details_section",
+  "skills",
+  "merchandise_issue_summary_tab",
+  "training_supplies"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_qc17",
+   "fieldtype": "Section Break",
+   "label": "Counter Staff Meet Attendance Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Counter Staff Meet Attendance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "counter_staff_meet_id",
+   "fieldtype": "Link",
+   "label": "Counter Staff Meet ID",
+   "options": "Counter Staff Meet Plan",
+   "unique": 1
+  },
+  {
+   "fieldname": "counter_staff_meet_name",
+   "fieldtype": "Data",
+   "label": "Counter Staff Meet Name"
+  },
+  {
+   "fieldname": "meet_date",
+   "fieldtype": "Date",
+   "label": "Meet Date"
+  },
+  {
+   "fieldname": "meet_venue",
+   "fieldtype": "Link",
+   "label": "Meet Venue",
+   "options": "Meet Venue"
+  },
+  {
+   "fieldname": "meet_type",
+   "fieldtype": "Link",
+   "label": "Meet Type",
+   "options": "Counter Staff Meet Type"
+  },
+  {
+   "fieldname": "column_break_bwwn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "town",
+   "fieldtype": "Link",
+   "label": "Town",
+   "options": "Kenya Town"
+  },
+  {
+   "fieldname": "meet_facilitator",
+   "fieldtype": "Data",
+   "label": "Meet Facilitator"
+  },
+  {
+   "fieldname": "sales_representative",
+   "fieldtype": "Link",
+   "label": "Sales Representative",
+   "options": "CPK Sales Representative"
+  },
+  {
+   "fieldname": "counter_staff_meet_remarks",
+   "fieldtype": "Small Text",
+   "label": "Counter Staff Meet Remarks",
+   "max_height": "80px"
+  },
+  {
+   "fieldname": "counter_staff_attendance_details_section",
+   "fieldtype": "Section Break",
+   "label": "Counter Staff Attendance Details"
+  },
+  {
+   "fieldname": "attendance_list",
+   "fieldtype": "Table",
+   "label": "Attendance List",
+   "options": "Counter Staff Meet Attendance Detail"
+  },
+  {
+   "fieldname": "products_training_details_section",
+   "fieldtype": "Section Break",
+   "label": "Products Training Details"
+  },
+  {
+   "fieldname": "products",
+   "fieldtype": "Table",
+   "label": "Products",
+   "options": "Training Products Detail"
+  },
+  {
+   "fieldname": "skills_training_details_section",
+   "fieldtype": "Section Break",
+   "label": "Skills Training Details"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Table",
+   "label": "Skills",
+   "options": "Training Skills Detail"
+  },
+  {
+   "fieldname": "section_break_elvs",
+   "fieldtype": "Section Break",
+   "label": "Counter Staff Attendance Details"
+  },
+  {
+   "fieldname": "dealers",
+   "fieldtype": "Table",
+   "label": "Dealers",
+   "options": "Counter Staff Dealer Attendance Detail"
+  },
+  {
+   "fieldname": "counter_staff_meet_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Counter Staff Meet Details"
+  },
+  {
+   "fieldname": "merchandise_issue_summary_tab",
+   "fieldtype": "Tab Break",
+   "label": "Merchandise Issue Summary"
+  },
+  {
+   "fieldname": "training_supplies",
+   "fieldtype": "Table",
+   "label": "Training Supplies",
+   "options": "Meet Supplies Detail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-01 22:30:40.831291",
+ "modified_by": "Administrator",
+ "module": "Meet",
+ "name": "Counter Staff Meet Attendance",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

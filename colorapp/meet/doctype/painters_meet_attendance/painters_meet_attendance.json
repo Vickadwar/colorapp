@@ -1,0 +1,207 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:meet_id",
+ "creation": "2024-08-30 14:59:21.885987",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "painters_meet_attendance_details_tab",
+  "section_break_ej1v",
+  "amended_from",
+  "meet_name",
+  "meet_id",
+  "meet_date",
+  "meet_venue",
+  "meet_type",
+  "town",
+  "column_break_rifq",
+  "meet_facilitator",
+  "sales_representative",
+  "painters_meet_remarks",
+  "user_merchandise_warehouse",
+  "painters_attendance_details_section",
+  "attendance_list",
+  "products_training_details_section",
+  "products",
+  "skills_training_details_section",
+  "skills",
+  "merchandise_issue_summary_tab",
+  "training_supplies_details_section",
+  "training_supplies",
+  "merchandise_consumption_summary_section",
+  "merchandise_consumption"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ej1v",
+   "fieldtype": "Section Break",
+   "label": "Painters Meet Attendance Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Painters Meet Attendance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "meet_id",
+   "fieldtype": "Link",
+   "label": "Meet ID",
+   "options": "Painters Meet Plan",
+   "unique": 1
+  },
+  {
+   "fieldname": "meet_name",
+   "fieldtype": "Data",
+   "label": "Meet Name"
+  },
+  {
+   "fieldname": "meet_date",
+   "fieldtype": "Date",
+   "label": "Meet Date"
+  },
+  {
+   "fieldname": "meet_facilitator",
+   "fieldtype": "Data",
+   "label": "Meet Facilitator"
+  },
+  {
+   "fieldname": "column_break_rifq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_representative",
+   "fieldtype": "Link",
+   "label": "Sales Representative",
+   "options": "CPK Sales Representative"
+  },
+  {
+   "fieldname": "painters_meet_remarks",
+   "fieldtype": "Small Text",
+   "label": "Painters Meet Remarks",
+   "max_height": "85px"
+  },
+  {
+   "fieldname": "products_training_details_section",
+   "fieldtype": "Section Break",
+   "label": "Product Training Details"
+  },
+  {
+   "fieldname": "products",
+   "fieldtype": "Table",
+   "label": "Products",
+   "options": "Training Products Detail"
+  },
+  {
+   "fieldname": "meet_venue",
+   "fieldtype": "Link",
+   "label": "Meet Venue",
+   "options": "Meet Venue"
+  },
+  {
+   "fieldname": "meet_type",
+   "fieldtype": "Link",
+   "label": "Meet Type",
+   "options": "Meet Type"
+  },
+  {
+   "fieldname": "skills_training_details_section",
+   "fieldtype": "Section Break",
+   "label": "Skills Training Details"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Table",
+   "label": "Skills",
+   "options": "Training Skills Detail"
+  },
+  {
+   "fieldname": "painters_attendance_details_section",
+   "fieldtype": "Section Break",
+   "label": "Painters Attendance Details"
+  },
+  {
+   "fieldname": "attendance_list",
+   "fieldtype": "Table",
+   "label": "Attendance List",
+   "options": "Painters Meet Attendance Detail"
+  },
+  {
+   "fieldname": "town",
+   "fieldtype": "Link",
+   "label": "Town",
+   "options": "Kenya Town"
+  },
+  {
+   "fieldname": "user_merchandise_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "User Merchandise Warehouse",
+   "options": "Merchandise Warehouse"
+  },
+  {
+   "fieldname": "painters_meet_attendance_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Painters Meet Attendance Details"
+  },
+  {
+   "fieldname": "merchandise_issue_summary_tab",
+   "fieldtype": "Tab Break",
+   "label": "Merchandise Issue Summary"
+  },
+  {
+   "fieldname": "training_supplies_details_section",
+   "fieldtype": "Section Break",
+   "label": "Training Supplies Details"
+  },
+  {
+   "fieldname": "training_supplies",
+   "fieldtype": "Table",
+   "label": "Training Supplies",
+   "options": "Meet Supplies Detail"
+  },
+  {
+   "fieldname": "merchandise_consumption_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Merchandise Consumption Summary"
+  },
+  {
+   "fieldname": "merchandise_consumption",
+   "fieldtype": "Table",
+   "label": "Merchandise Consumption ",
+   "options": "Meet Merchandise Issue Detail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-01 17:10:57.665265",
+ "modified_by": "Administrator",
+ "module": "Meet",
+ "name": "Painters Meet Attendance",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

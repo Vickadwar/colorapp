@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:member_app_number",
+ "creation": "2024-09-05 15:47:50.998080",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "colour_app_counter_staff_details_section",
+  "counter_staff_name",
+  "mobile_number",
+  "first_name",
+  "second_name",
+  "last_name",
+  "gender",
+  "column_break_dgcp",
+  "county",
+  "town",
+  "cpk_region",
+  "national_id",
+  "member_app_number",
+  "other_information_section",
+  "primary_dealer",
+  "last_training_date",
+  "column_break_qhhz",
+  "physical_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "colour_app_counter_staff_details_section",
+   "fieldtype": "Section Break",
+   "label": "Colour App Counter Staff Details"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "second_name",
+   "fieldtype": "Data",
+   "label": "Second Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "county",
+   "fieldtype": "Link",
+   "label": "County",
+   "options": "Kenya County"
+  },
+  {
+   "fieldname": "column_break_dgcp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "town",
+   "fieldtype": "Link",
+   "label": "Town",
+   "options": "Kenya Town"
+  },
+  {
+   "fieldname": "cpk_region",
+   "fieldtype": "Link",
+   "label": "CPK Region",
+   "options": "CPK Region"
+  },
+  {
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "label": "National ID"
+  },
+  {
+   "fieldname": "member_app_number",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Member App Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "other_information_section",
+   "fieldtype": "Section Break",
+   "label": "Other Information"
+  },
+  {
+   "fieldname": "primary_dealer",
+   "fieldtype": "Link",
+   "label": "Primary Dealer",
+   "options": "CPK Dealer"
+  },
+  {
+   "fieldname": "last_training_date",
+   "fieldtype": "Date",
+   "label": "Last Training Date"
+  },
+  {
+   "fieldname": "column_break_qhhz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Small Text",
+   "label": "Physical Address ",
+   "max_height": "70px"
+  },
+  {
+   "fieldname": "counter_staff_name",
+   "fieldtype": "Data",
+   "label": "Counter Staff Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-05 16:10:09.664305",
+ "modified_by": "Administrator",
+ "module": "Dealer Membership",
+ "name": "Counter Staff Member",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "counter_staff_name"
+}

@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PMP{YY}{MM}{####}",
+ "creation": "2024-08-30 11:39:02.333440",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_dhcn",
+  "amended_from",
+  "meet_name",
+  "meet_date",
+  "meet_venue",
+  "meet_type",
+  "maximum_invitees",
+  "meet_facilitator_email",
+  "meet_facilitator",
+  "mobile_number",
+  "column_break_wfce",
+  "depot",
+  "town",
+  "cpk_region",
+  "sales_representative",
+  "execution_status",
+  "meet_description",
+  "next_approver",
+  "attendance_created",
+  "painters_meet_invite_details_section",
+  "painters_meet_invite"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_dhcn",
+   "fieldtype": "Section Break",
+   "label": "Painters Meet Plan Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Painters Meet Plan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "meet_name",
+   "fieldtype": "Data",
+   "label": "Meet Name"
+  },
+  {
+   "fieldname": "meet_venue",
+   "fieldtype": "Link",
+   "label": "Meet Venue",
+   "options": "Meet Venue"
+  },
+  {
+   "fieldname": "meet_type",
+   "fieldtype": "Link",
+   "label": "Meet Type",
+   "options": "Meet Type"
+  },
+  {
+   "fieldname": "meet_date",
+   "fieldtype": "Date",
+   "label": "Meet Date"
+  },
+  {
+   "default": "User",
+   "fieldname": "meet_facilitator_email",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Meet Facilitator Email",
+   "options": "User"
+  },
+  {
+   "fetch_from": "meet_facilitator_email.full_name",
+   "fieldname": "meet_facilitator",
+   "fieldtype": "Data",
+   "label": "Meet Facilitator "
+  },
+  {
+   "fetch_from": "meet_facilitator_email.depot",
+   "fetch_if_empty": 1,
+   "fieldname": "depot",
+   "fieldtype": "Link",
+   "label": "Depot",
+   "options": "CPK Depot"
+  },
+  {
+   "fetch_from": "meet_facilitator_email.cpk_region",
+   "fetch_if_empty": 1,
+   "fieldname": "cpk_region",
+   "fieldtype": "Link",
+   "label": "CPK Region",
+   "options": "CPK Region"
+  },
+  {
+   "fieldname": "column_break_wfce",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "meet_facilitator_email.mobile_no",
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Pending Execution",
+   "fieldname": "execution_status",
+   "fieldtype": "Select",
+   "label": "Execution Status",
+   "options": "Pending Execution\nExecuted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "next_approver",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Next Approver",
+   "options": "User"
+  },
+  {
+   "fieldname": "meet_description",
+   "fieldtype": "Small Text",
+   "label": "Meet Description",
+   "max_height": "60px"
+  },
+  {
+   "fieldname": "sales_representative",
+   "fieldtype": "Link",
+   "label": "Sales Representative",
+   "options": "CPK Sales Representative"
+  },
+  {
+   "fetch_from": "meet_venue.town",
+   "fieldname": "town",
+   "fieldtype": "Link",
+   "label": "Town",
+   "options": "Kenya Town"
+  },
+  {
+   "fieldname": "painters_meet_invite_details_section",
+   "fieldtype": "Section Break",
+   "label": "Painters Meet Invite Details"
+  },
+  {
+   "fieldname": "painters_meet_invite",
+   "fieldtype": "Table",
+   "label": "Painters Meet Invite",
+   "options": "Painters Meet Invite Detail"
+  },
+  {
+   "fetch_from": "meet_type.maximum_pax",
+   "fetch_if_empty": 1,
+   "fieldname": "maximum_invitees",
+   "fieldtype": "Int",
+   "label": "Maximum Invitees",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "attendance_created",
+   "fieldtype": "Check",
+   "label": "Attendance Created",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-06 16:29:59.235844",
+ "modified_by": "Administrator",
+ "module": "Meet",
+ "name": "Painters Meet Plan",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

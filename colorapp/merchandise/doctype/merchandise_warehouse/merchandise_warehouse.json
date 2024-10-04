@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:merchandise_warehouse_code",
+ "creation": "2024-09-10 17:41:36.497354",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "merchandise_warehouse_details_section",
+  "merchandise_warehouse_code",
+  "merchandise_warehouse_name",
+  "merchandise_warehouse_location",
+  "merchandise_warehouse_type",
+  "column_break_yeir",
+  "merchandise_warehouse_description",
+  "disabled",
+  "merchandise_item_details_section",
+  "merchandise_warehouse_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "merchandise_warehouse_details_section",
+   "fieldtype": "Section Break",
+   "label": "Merchandise Warehouse Details"
+  },
+  {
+   "fieldname": "merchandise_warehouse_code",
+   "fieldtype": "Data",
+   "label": "Merchandise Warehouse Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "merchandise_warehouse_name",
+   "fieldtype": "Data",
+   "label": "Merchandise Warehouse Name"
+  },
+  {
+   "fieldname": "merchandise_warehouse_location",
+   "fieldtype": "Link",
+   "label": "Merchandise Warehouse Location",
+   "options": "CPK Depot"
+  },
+  {
+   "default": "User Warehouse",
+   "fieldname": "merchandise_warehouse_type",
+   "fieldtype": "Select",
+   "label": "Merchandise Warehouse Type",
+   "options": "Main Warehouse\nUser Warehouse"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "merchandise_item_details_section",
+   "fieldtype": "Section Break",
+   "label": "Merchandise Item Details"
+  },
+  {
+   "fieldname": "merchandise_warehouse_item",
+   "fieldtype": "Table",
+   "label": "Merchandise Warehouse Item",
+   "options": "Warehouse Merchandise Detail"
+  },
+  {
+   "fieldname": "column_break_yeir",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "merchandise_warehouse_description",
+   "fieldtype": "Small Text",
+   "label": "Merchandise Warehouse Description",
+   "max_height": "75px"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-27 10:23:21.956448",
+ "modified_by": "Administrator",
+ "module": "Merchandise",
+ "name": "Merchandise Warehouse",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "merchandise_warehouse_code,merchandise_warehouse_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "merchandise_warehouse_name"
+}

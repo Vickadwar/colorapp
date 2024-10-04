@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-01 16:00:41.547226",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "merchandise_item_name",
+  "consumed_quantity"
+ ],
+ "fields": [
+  {
+   "fieldname": "merchandise_item_name",
+   "fieldtype": "Link",
+   "label": "Merchandise Item Name",
+   "options": "Merchandise Item"
+  },
+  {
+   "fieldname": "consumed_quantity",
+   "fieldtype": "Float",
+   "label": "Consumed Quantity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-01 16:03:23.406462",
+ "modified_by": "Administrator",
+ "module": "Merchandise",
+ "name": "Meet Merchandise Issue Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:region_code",
+ "creation": "2024-08-30 10:14:08.307014",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "cpk_region_details_section",
+  "region_name",
+  "region_code",
+  "painter_trainer",
+  "area_sales_manager",
+  "sales_representative",
+  "column_break_qqvx",
+  "team_kubwa_manager",
+  "pmg_manger"
+ ],
+ "fields": [
+  {
+   "fieldname": "cpk_region_details_section",
+   "fieldtype": "Section Break",
+   "label": "CPK Region Details"
+  },
+  {
+   "fieldname": "region_name",
+   "fieldtype": "Data",
+   "label": "Region Name"
+  },
+  {
+   "fieldname": "region_code",
+   "fieldtype": "Data",
+   "label": "Region Code",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "painter_trainer",
+   "fieldtype": "Link",
+   "label": "Painter Trainer",
+   "options": "User"
+  },
+  {
+   "fieldname": "area_sales_manager",
+   "fieldtype": "Link",
+   "label": "Area Sales Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_qqvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "team_kubwa_manager",
+   "fieldtype": "Link",
+   "label": "Team Kubwa Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "pmg_manger",
+   "fieldtype": "Link",
+   "label": "PMG Manger",
+   "options": "User"
+  },
+  {
+   "fieldname": "sales_representative",
+   "fieldtype": "Link",
+   "label": "Sales Representative",
+   "options": "User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-30 11:10:26.116511",
+ "modified_by": "Administrator",
+ "module": "Colour App Geo",
+ "name": "CPK Region",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "region_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "region_name",
+ "translated_doctype": 1
+}

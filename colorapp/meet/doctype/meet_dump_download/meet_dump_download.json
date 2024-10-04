@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MDD-{####}",
+ "creation": "2024-10-02 18:14:33.586060",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meet_dump_download_form_section",
+  "download_type",
+  "meet_type",
+  "select_painters_meet",
+  "select_counter_staff_meet",
+  "column_break_fdsg",
+  "from_date",
+  "to_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "meet_dump_download_form_section",
+   "fieldtype": "Section Break",
+   "label": "Meet Dump Download Form"
+  },
+  {
+   "fieldname": "download_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Download Type",
+   "options": "Single Meet\nMultiple Meets\nPainters Dump\nCounter Staff Dump",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "select_painters_meet",
+   "fieldtype": "Link",
+   "label": "Select Painters Meet",
+   "options": "Painters Meet Attendance"
+  },
+  {
+   "fieldname": "select_counter_staff_meet",
+   "fieldtype": "Link",
+   "label": "Select Counter Staff Meet",
+   "options": "Counter Staff Meet Attendance"
+  },
+  {
+   "fieldname": "meet_type",
+   "fieldtype": "Select",
+   "label": "Meet Type",
+   "options": "Painters Meet\nCounter Staff Meet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fdsg",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-03 04:39:50.382894",
+ "modified_by": "Administrator",
+ "module": "Meet",
+ "name": "Meet Dump Download",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

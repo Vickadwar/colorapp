@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:meet_type_name",
+ "creation": "2024-08-30 10:29:39.800952",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meet_type_details_section",
+  "meet_type_name",
+  "maximum_pax"
+ ],
+ "fields": [
+  {
+   "fieldname": "meet_type_details_section",
+   "fieldtype": "Section Break",
+   "label": "Meet Type Details"
+  },
+  {
+   "fieldname": "meet_type_name",
+   "fieldtype": "Data",
+   "label": "Meet Type Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "maximum_pax",
+   "fieldtype": "Int",
+   "label": "Maximum Pax",
+   "non_negative": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-30 10:31:17.087465",
+ "modified_by": "Administrator",
+ "module": "Meet",
+ "name": "Meet Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "meet_type_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "meet_type_name"
+}

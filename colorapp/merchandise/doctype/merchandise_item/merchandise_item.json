@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:merchandise_item_code",
+ "creation": "2024-09-10 17:23:38.602996",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_details_tab",
+  "merchandise_item_details_section",
+  "merchandise_item_code",
+  "merchandise_item_name",
+  "total_quantity",
+  "default_warehouse",
+  "column_break_zppi",
+  "merchandise_item_description",
+  "maintain_stock",
+  "disabled",
+  "merchandise_inventory_tab",
+  "merchandise_item_inventory_details_section",
+  "minimum_stock_level"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Item Details"
+  },
+  {
+   "fieldname": "merchandise_item_details_section",
+   "fieldtype": "Section Break",
+   "label": "Merchandise Item Details"
+  },
+  {
+   "fieldname": "merchandise_item_code",
+   "fieldtype": "Data",
+   "label": "Merchandise Item Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "merchandise_item_name",
+   "fieldtype": "Data",
+   "label": "Merchandise Item Name"
+  },
+  {
+   "fieldname": "column_break_zppi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "maintain_stock",
+   "fieldtype": "Check",
+   "label": "Maintain Stock"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "merchandise_inventory_tab",
+   "fieldtype": "Tab Break",
+   "label": "Merchandise Inventory "
+  },
+  {
+   "fieldname": "merchandise_item_inventory_details_section",
+   "fieldtype": "Section Break",
+   "label": "Merchandise Item Inventory Details"
+  },
+  {
+   "fieldname": "minimum_stock_level",
+   "fieldtype": "Float",
+   "label": "Minimum Stock Level"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Float",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "default_warehouse",
+   "fieldtype": "Link",
+   "label": "Default Warehouse",
+   "options": "Merchandise Warehouse"
+  },
+  {
+   "fieldname": "merchandise_item_description",
+   "fieldtype": "Small Text",
+   "label": "Merchandise Item Description",
+   "max_height": "70px"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-27 11:12:54.996952",
+ "modified_by": "Administrator",
+ "module": "Merchandise",
+ "name": "Merchandise Item",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "merchandise_item_code,merchandise_item_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "merchandise_item_name",
+ "translated_doctype": 1
+}

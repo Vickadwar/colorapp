@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:counter_staff_meet_type_name",
+ "creation": "2024-09-05 16:31:50.605642",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "counter_staff_meet_type_details_section",
+  "counter_staff_meet_type_name",
+  "maximum_pax"
+ ],
+ "fields": [
+  {
+   "fieldname": "counter_staff_meet_type_details_section",
+   "fieldtype": "Section Break",
+   "label": "Counter Staff Meet Type Details"
+  },
+  {
+   "fieldname": "counter_staff_meet_type_name",
+   "fieldtype": "Data",
+   "label": "Counter Staff Meet Type Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "maximum_pax",
+   "fieldtype": "Int",
+   "label": "Maximum Pax",
+   "non_negative": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-05 16:34:05.319691",
+ "modified_by": "Administrator",
+ "module": "Meet",
+ "name": "Counter Staff Meet Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

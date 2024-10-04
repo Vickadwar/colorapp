@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CSMP{YY}{MM}{####}",
+ "creation": "2024-09-05 16:14:26.790638",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_d7hk",
+  "amended_from",
+  "meet_name",
+  "meet_date",
+  "meet_venue",
+  "town",
+  "meet_type",
+  "maximum_invitees",
+  "meet_facilitator_email",
+  "meet_facilitator",
+  "mobile_number",
+  "column_break_xmue",
+  "depot",
+  "cpk_region",
+  "sales_representative",
+  "execution_status",
+  "meet_description",
+  "next_approver",
+  "attendance_created",
+  "dealer_deatils_section",
+  "dealers_meet_invite",
+  "counter_staff_meet_invite_details_section",
+  "counter_staff_meet_invite"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_d7hk",
+   "fieldtype": "Section Break",
+   "label": "Counter Staff Meet Plan Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Counter Staff Meet Plan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "meet_name",
+   "fieldtype": "Data",
+   "label": "Meet Name"
+  },
+  {
+   "fieldname": "meet_date",
+   "fieldtype": "Date",
+   "label": "Meet Date"
+  },
+  {
+   "fieldname": "meet_venue",
+   "fieldtype": "Link",
+   "label": "Meet Venue",
+   "options": "Meet Venue"
+  },
+  {
+   "fieldname": "meet_type",
+   "fieldtype": "Link",
+   "label": "Meet Type",
+   "options": "Counter Staff Meet Type"
+  },
+  {
+   "default": "User",
+   "fieldname": "meet_facilitator_email",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Meet Facilitator Email",
+   "options": "User"
+  },
+  {
+   "fetch_from": "meet_facilitator_email.full_name",
+   "fieldname": "meet_facilitator",
+   "fieldtype": "Data",
+   "label": "Meet Facilitator"
+  },
+  {
+   "fetch_from": "meet_facilitator_email.mobile_no",
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "column_break_xmue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "meet_facilitator_email.depot",
+   "fetch_if_empty": 1,
+   "fieldname": "depot",
+   "fieldtype": "Link",
+   "label": "Depot",
+   "options": "CPK Depot"
+  },
+  {
+   "fetch_from": "meet_venue.town",
+   "fetch_if_empty": 1,
+   "fieldname": "town",
+   "fieldtype": "Link",
+   "label": "Town",
+   "options": "Kenya Town"
+  },
+  {
+   "fetch_from": "meet_facilitator_email.cpk_region",
+   "fetch_if_empty": 1,
+   "fieldname": "cpk_region",
+   "fieldtype": "Link",
+   "label": "CPK Region",
+   "options": "CPK Region"
+  },
+  {
+   "fieldname": "sales_representative",
+   "fieldtype": "Link",
+   "label": "Sales Representative",
+   "options": "CPK Sales Representative"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Pending Execution",
+   "fieldname": "execution_status",
+   "fieldtype": "Select",
+   "label": "Execution Status",
+   "options": "Pending Execution\nExecuted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "meet_description",
+   "fieldtype": "Small Text",
+   "label": "Meet Description",
+   "max_height": "75px"
+  },
+  {
+   "fieldname": "next_approver",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Next Approver",
+   "options": "User"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "attendance_created",
+   "fieldtype": "Check",
+   "label": "Attendance Created",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "meet_type.maximum_pax",
+   "fetch_if_empty": 1,
+   "fieldname": "maximum_invitees",
+   "fieldtype": "Int",
+   "label": "Maximum Invitees"
+  },
+  {
+   "fieldname": "dealer_deatils_section",
+   "fieldtype": "Section Break",
+   "label": "Dealer Deatils"
+  },
+  {
+   "fieldname": "dealers_meet_invite",
+   "fieldtype": "Table",
+   "label": "Dealers Meet Invite",
+   "options": "Counter Staff Dealer Invite Detail"
+  },
+  {
+   "fieldname": "counter_staff_meet_invite_details_section",
+   "fieldtype": "Section Break",
+   "label": "Counter Staff Meet Invite Details"
+  },
+  {
+   "fieldname": "counter_staff_meet_invite",
+   "fieldtype": "Table",
+   "label": "Counter Staff Meet Invite",
+   "options": "Counter Staff Meet Invite Detail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-06 15:51:00.307706",
+ "modified_by": "Administrator",
+ "module": "Meet",
+ "name": "Counter Staff Meet Plan",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

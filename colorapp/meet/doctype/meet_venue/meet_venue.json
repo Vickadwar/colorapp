@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:meet_venue_code",
+ "creation": "2024-08-30 10:36:00.367868",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meet_venue_details_section",
+  "meet_venue_name",
+  "town",
+  "meet_venue_code",
+  "depot",
+  "column_break_khvd",
+  "meet_venue_address",
+  "meet_venue_business_details_section",
+  "contact_person_name",
+  "contact_person_mobile_number",
+  "email_address",
+  "credit_days_offered",
+  "bank_name",
+  "bank_account_name",
+  "bank_account_number",
+  "column_break_kefz",
+  "bank_branch_name",
+  "swift_code",
+  "bank_code",
+  "business_letter_head"
+ ],
+ "fields": [
+  {
+   "fieldname": "meet_venue_details_section",
+   "fieldtype": "Section Break",
+   "label": "Meet Venue Details"
+  },
+  {
+   "fieldname": "meet_venue_name",
+   "fieldtype": "Data",
+   "label": "Meet Venue Name"
+  },
+  {
+   "fieldname": "town",
+   "fieldtype": "Link",
+   "label": "Town",
+   "options": "Kenya Town"
+  },
+  {
+   "fieldname": "meet_venue_code",
+   "fieldtype": "Data",
+   "label": "Meet Venue Code",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "depot",
+   "fieldtype": "Link",
+   "label": "Depot",
+   "options": "CPK Depot"
+  },
+  {
+   "fieldname": "column_break_khvd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meet_venue_address",
+   "fieldtype": "Small Text",
+   "label": "Meet Venue Address",
+   "max_height": "70px"
+  },
+  {
+   "fieldname": "meet_venue_business_details_section",
+   "fieldtype": "Section Break",
+   "label": "Meet Venue Business Details"
+  },
+  {
+   "fieldname": "contact_person_name",
+   "fieldtype": "Data",
+   "label": "Contact Person Name"
+  },
+  {
+   "fieldname": "contact_person_mobile_number",
+   "fieldtype": "Data",
+   "label": "Contact Person Mobile Number"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "credit_days_offered",
+   "fieldtype": "Int",
+   "label": "Credit Days Offered"
+  },
+  {
+   "fieldname": "bank_account_name",
+   "fieldtype": "Data",
+   "label": "Bank Account Name"
+  },
+  {
+   "fieldname": "bank_account_number",
+   "fieldtype": "Data",
+   "label": "Bank Account Number"
+  },
+  {
+   "fieldname": "column_break_kefz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_branch_name",
+   "fieldtype": "Data",
+   "label": "Bank Branch Name"
+  },
+  {
+   "fieldname": "swift_code",
+   "fieldtype": "Data",
+   "label": "Swift Code"
+  },
+  {
+   "fieldname": "bank_code",
+   "fieldtype": "Data",
+   "label": "Bank Code"
+  },
+  {
+   "fieldname": "business_letter_head",
+   "fieldtype": "Attach",
+   "label": "Business Letter Head"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-30 10:57:54.282163",
+ "modified_by": "Administrator",
+ "module": "Meet",
+ "name": "Meet Venue",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "meet_venue_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "meet_venue_name",
+ "track_changes": 1,
+ "track_seen": 1
+}

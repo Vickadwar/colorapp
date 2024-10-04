@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ML{YY}{MM}{DD}{###}",
+ "creation": "2024-09-11 11:38:15.755472",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "merchandise_ledger_details_section",
+  "merchandise_item_code",
+  "merchandise_item_name",
+  "merchandise_warehouse",
+  "posting_date",
+  "column_break_ufee",
+  "posting_time",
+  "posting_datetime",
+  "merchandise_ledger_transaction_details_section",
+  "quantity",
+  "balance_after",
+  "transaction_type",
+  "is_cancelled",
+  "balance_quantity",
+  "column_break_hvgv",
+  "reference_doc_name",
+  "transaction_remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "merchandise_warehouse",
+   "fieldtype": "Link",
+   "label": "Merchandise Warehouse",
+   "options": "Merchandise Warehouse"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "label": "Posting Time"
+  },
+  {
+   "fieldname": "posting_datetime",
+   "fieldtype": "Datetime",
+   "label": "Posting DateTime"
+  },
+  {
+   "fieldname": "merchandise_ledger_details_section",
+   "fieldtype": "Section Break",
+   "label": "Merchandise Ledger Details"
+  },
+  {
+   "fieldname": "column_break_ufee",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "merchandise_ledger_transaction_details_section",
+   "fieldtype": "Section Break",
+   "label": "Merchandise Ledger Transaction Details"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "balance_after",
+   "fieldtype": "Float",
+   "label": "Balance After"
+  },
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Data",
+   "label": "Transaction Type"
+  },
+  {
+   "fieldname": "column_break_hvgv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_doc_name",
+   "fieldtype": "Link",
+   "label": "Reference Doc Name",
+   "options": "Merchandise Entry"
+  },
+  {
+   "fieldname": "transaction_remarks",
+   "fieldtype": "Small Text",
+   "label": "Transaction Remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_cancelled",
+   "fieldtype": "Check",
+   "label": "Is Cancelled"
+  },
+  {
+   "fieldname": "balance_quantity",
+   "fieldtype": "Float",
+   "label": "Balance Quantity"
+  },
+  {
+   "fieldname": "merchandise_item_code",
+   "fieldtype": "Link",
+   "label": "Merchandise Item Code",
+   "options": "Merchandise Item"
+  },
+  {
+   "fetch_from": "merchandise_item_code.merchandise_item_name",
+   "fieldname": "merchandise_item_name",
+   "fieldtype": "Data",
+   "label": "Merchandise Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-27 12:31:53.391833",
+ "modified_by": "Administrator",
+ "module": "Merchandise",
+ "name": "Merchandise Ledger",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

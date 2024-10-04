@@ -4,6 +4,7 @@ app_publisher = "Victor Mandela"
 app_description = "An application to manage trainings, issuance of merchandize, and FOC>"
 app_email = "vickadwar@gmail.com"
 app_license = "mit"
+
 # required_apps = []
 
 # Includes in <head>
@@ -227,3 +228,22 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+doc_events = {
+    "Colour App Member": {
+        "on_update": "colorapp.api.update_todo_status"
+    },
+    "Counter Staff Meet Plan": {
+        "before_save": "colorapp.api.validate_counter_staff", # Validate duplicates before save
+         "validate": "colorapp.api.update_dealer_invite_count_on_save" # Validate and computes counter staff invited.
+     },
+    "Counter Staff Meet Attendance": {
+        "on_submit": "colorapp.api.update_execution_status"  # Trigger this function when attendance is submitted
+    },
+     "Painters Meet Attendance": {
+        "on_submit": "colorapp.api.update_painters_execution_status"  # Trigger this function when attendance is submitted
+    }
+}
+
+doctype_js = {
+    "Merchandise Entry": "public/js/merchandise_entry.js"
+}

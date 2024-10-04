@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ME{YYYY}{####}",
+ "creation": "2024-09-11 04:53:12.300608",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xlqr",
+  "merchandise_entry_type",
+  "posting_date",
+  "posting_time",
+  "posting_datetime",
+  "edit_posting_time_and_date",
+  "amended_from",
+  "merchandise_entry_description",
+  "column_break_orlp",
+  "source_warehouse",
+  "target_warehouse",
+  "merchandise_entry_batch",
+  "merchandise_item_details_section",
+  "merchandise_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xlqr",
+   "fieldtype": "Section Break",
+   "label": "Merchandise Entry Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Merchandise Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "merchandise_entry_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Merchandise Entry Type",
+   "options": "Merchandise Entry Type",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "label": "Posting Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_posting_time_and_date",
+   "fieldtype": "Check",
+   "label": "Edit Posting Time and Date"
+  },
+  {
+   "fieldname": "column_break_orlp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "label": "Source Warehouse",
+   "options": "Merchandise Warehouse"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": "Target Warehouse",
+   "options": "Merchandise Warehouse"
+  },
+  {
+   "fieldname": "merchandise_entry_description",
+   "fieldtype": "Small Text",
+   "label": "Merchandise Entry Description",
+   "max_height": "85px"
+  },
+  {
+   "fieldname": "merchandise_entry_batch",
+   "fieldtype": "Barcode",
+   "label": "Merchandise Entry Batch"
+  },
+  {
+   "fieldname": "merchandise_item_details_section",
+   "fieldtype": "Section Break",
+   "label": "Merchandise Item Details"
+  },
+  {
+   "fieldname": "merchandise_items",
+   "fieldtype": "Table",
+   "label": "Merchandise Items",
+   "options": "Merchandise Entry Detail"
+  },
+  {
+   "fieldname": "posting_datetime",
+   "fieldtype": "Datetime",
+   "label": "Posting DateTime",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-27 11:51:51.949014",
+ "modified_by": "Administrator",
+ "module": "Merchandise",
+ "name": "Merchandise Entry",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

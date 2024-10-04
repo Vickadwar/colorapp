@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:county_code",
+ "creation": "2024-08-30 09:51:32.695537",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "kenya_county_details_section",
+  "county_name",
+  "county_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "kenya_county_details_section",
+   "fieldtype": "Section Break",
+   "label": "Kenya County Details"
+  },
+  {
+   "fieldname": "county_name",
+   "fieldtype": "Data",
+   "label": "County Name"
+  },
+  {
+   "fieldname": "county_code",
+   "fieldtype": "Data",
+   "label": "County Code",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-30 11:10:12.414339",
+ "modified_by": "Administrator",
+ "module": "Colour App Geo",
+ "name": "Kenya County",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "county_name,county_code",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "county_name",
+ "translated_doctype": 1
+}
